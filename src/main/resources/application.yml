@@ -1,6 +1,13 @@
 micronaut:
   application:
     name: micronautHibernateValidator
+  executors:
+    io:
+      type: fixed
+      number-of-threads: 20
+    scheduled:
+      type: fixed
+      number-of-threads: 20
 netty:
   default:
     allocator:
